@@ -13,4 +13,21 @@ print(type(a))
 a=4
 b=3
 sum = a-b
-print(sum)
+print(sum)  
+
+
+#arithmetic operators
+a=5
+b=10
+
+print(a+b) 
+print(a-b) 
+print(a*b) 
+print(a/b) 
+
+
+#relational operators
+a=5
+b=3
+
+print(a==b) #false
