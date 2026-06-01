@@ -4,10 +4,6 @@ x = np.array([1, 2, 3])
 print(x) 
 y = [1,2,3,4,5]
 print(y)  
-
-#creat a list
-y=[1,2,3,4]
-print(y)
 print(type(y))
 # list can store multiple data types, numpy array uses only one datatype.
 # numpy array use less memory and fast as compare to list.
