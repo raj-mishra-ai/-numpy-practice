@@ -1,27 +1,42 @@
+#Lecture 1
 import numpy as np
-
-x = np.array([1, 2, 3])
-print(x) 
+x = np.array([1,2,3])
+print(x)
+print(type(x))
 y = [1,2,3,4,5]
-print(y)  
-print(type(y))
-# list can store multiple data types, numpy array uses only one datatype.
-# numpy array use less memory and fast as compare to list.
-# numpy array work as a matrix and perform efficiently with numerical operation.
+print(y)
+print(type(y))          
 
-# check who consume less time, numpy array/list python.
-# functions (%timeit ->for one line, %%timeit -> for program).
-# for list
-import timeit
-execution_time = timeit.timeit('[j**4 for j in range(1,9)]',
-                 number = 100000
-               )
+#Lecture 2
+import timeit  
+execution_time = timeit.timeit(
+    '[j**4 for j in range(1,2)]',
+    number=10000
+)
+
 print(execution_time)
-# for numpy array
+
 import numpy as np
 import timeit
-result = timeit.timeit("np.arange(1,9)**4",globals=globals(),
-        number = 100000 )
+
+result = timeit.timeit(
+    "np.arange(1,2)**4",
+    globals=globals(),
+    number=10000
+)
+
 print(result)
+
+#Lecture 3 (creating numpy arrays)
+# Array
+import numpy as np
+
+x = [1,2,3,4]
+y = np.array([1,2,3,4])
+
+print(y)
+print(type(y))
+
+
 
 
