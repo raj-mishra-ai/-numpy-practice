@@ -88,3 +88,7 @@ print(ar_dia)
 
 ar_dia= np.eye(3,4)
 print(ar_dia)
+
+# linspace
+ar_lin=np.linspace(1,20,num=5)
+print(ar_lin)
