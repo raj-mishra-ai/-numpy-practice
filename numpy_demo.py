@@ -55,7 +55,36 @@ import numpy as np
 arn = np.array([1,2,3,4], ndmin=20)
 
 print(arn)
-print(arn.ndim)
+print(arn.ndim)   
+
+#create Numpy Array using numpy (functions)
+#spacial numpy array
+
+#zerro's array
+
+import numpy as np
+
+ar_zero = np.zeros(4)
+ar_zero1 = np.zeros((3,4))
+
+print(ar_zero)
+print(ar_zero1)
 
 
+#ones
+ar_one = np.ones(4)
 
+#empty
+ar_em=np.empty(4)
+print(ar_em)
+
+#Range
+ar_rn=np.arange(5)
+print(ar_rn)
+
+#Diagnal
+ar_dia= np.eye(4)
+print(ar_dia)
+
+ar_dia= np.eye(3,4)
+print(ar_dia)
