@@ -57,6 +57,8 @@ arn = np.array([1,2,3,4], ndmin=20)
 print(arn)
 print(arn.ndim)   
 
+
+#Lecture 4
 #create Numpy Array using numpy (functions)
 #spacial numpy array
 
@@ -92,3 +94,27 @@ print(ar_dia)
 #linspace
 ar_lin=np.linspace(1,20,num=5)
 print(ar_lin)
+
+#Lecture 5 
+
+1.#Random function
+#rand()
+
+import numpy as np
+var=np.random.rand(4)
+print(var)
+
+varl=np.random.rand(2,5)
+print(varl)
+
+#Randn()
+var2=np.random.randn(5)
+print(var2)
+
+#Rnf()
+var3=np.random.ranf(4)
+print(var3)
+
+#Randint()
+var4=np.random.randint(5,20,5)
+print(var4)
