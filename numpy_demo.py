@@ -118,3 +118,37 @@ print(var3)
 #Randint()
 var4=np.random.randint(5,20,5)
 print(var4)
+
+#Lecture 6
+#Data type in Numpy Array
+
+import numpy as np
+
+var = np.array([1, 2, 3, 4,12,13,15])
+print("data type:", var.dtype)
+
+
+var = np.array([1.0,1.2,1.3])
+print("data type:", var.dtype)
+
+var = np.array(["A","B","C"])
+print("data type:", var.dtype)
+
+var = np.array(["A","B","C",1,2,3,4])
+print("data type:", var.dtype)
+
+import numpy as np
+
+X = np.array([1,2,3,4])
+print("data type:", X.dtype)
+
+X = np.array([1,2,3,4], dtype=np.int8)
+print("data type:", X.dtype)
+print(x)
+
+X = np.array([1,2,3,4],dtype="f")
+print("data type:", X.dtype)
+print(x)
+
+
+
