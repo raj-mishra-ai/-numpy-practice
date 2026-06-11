@@ -256,6 +256,28 @@ print(np.sin(var2))
 print(np.cos(var2))
 print(np.cumsum(var2))
 
+#Lecture 9
+import numpy as np
+
+var = np.array([[1,2],[1.2,3.4]])
+
+print(var)
+print()
+
+print(var.shape)
+
+
+var1 = np.array([1,2,3,4],ndmin=4)
+print(var1)
+print(var1.ndim)
+print()
+print(var1.shape)
+
+#Reshape
+var2=np.array([1,2,3,4,5,6])
+x=var2.reshape(3,2)
+print(x)
 
 
 
+                
