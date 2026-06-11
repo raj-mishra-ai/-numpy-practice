@@ -218,4 +218,44 @@ print()
 varadd2=var21*var22
 print(varadd2)
 
+#Lecture 8
+# Arithmetic functions in numpy array
+
+import numpy as np
+var=np.array([1,2,3,4,5,6,7])
+print("min:",np.min(var))
+print("max:",np.max(var))
+
+
+var=np.array([1,2,3,4,5,6,7])
+print("min:",np.min(var),np.argmin(var))
+print("max:",np.max(var),np.argmax(var))
+
+
+var1=np.array([[2,4,3],[7,8,3]])
+print(np.min(var1,axis=1))
+
+var1=np.array([[2,4,3],[7,8,3]])
+print(np.min(var1,axis=0))
+
+var=np.array([1,2,3,4,5,6,7])
+print("min:",np.min(var))
+print("max:",np.max(var))
+print("sqrt:",np.sqrt(var))
+
+
+var2=np.array([1,2,3,4,5,6,7])
+print(np.sin(var2))
+print(np.cos(var2))
+
+
+
+var2 = np.array([1,2,3,4,5,6,7])
+
+print(np.sin(var2))
+print(np.cos(var2))
+print(np.cumsum(var2))
+
+
+
 
