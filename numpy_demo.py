@@ -148,7 +148,74 @@ print(x)
 
 X = np.array([1,2,3,4],dtype="f")
 print("data type:", X.dtype)
-print(x)
+print(x) 
 
+
+#Lecture 7
+#Arithmetic Operation in Numpy Array.
+#1.(a+b) is np.add(a,b)
+#2.(a-b) is np.subtract(a,b)
+#3.(a*b) in np.multiply(a,b)
+#4.(a/b) is np.divide(a,b)
+#5.(a%b) is np.mod(a,b)
+#6.(a**b) is np.power(a,b)
+#7.(1/a) is np.reciprocal(a)
+
+import numpy as np
+var=np.array([1,2,3,4,5,])
+varadd=var+5
+print(varadd)
+
+
+var1 = np.array([1,2,3,4,5,])
+var2 = np.array([1,2,3,4,5,])
+varadd=var1+ var2
+print(varadd)
+
+var1 = np.array([1,2,3,4,5,])
+var2 = np.array([1,2,3,4,5,])
+varadd=var1- var2
+print(varadd)
+
+var=np.array([1,2,3,4,5,])
+varadd=var-5
+print(varadd)
+
+var=np.array([1,2,3,4,5,])
+varadd=var*5
+print(varadd)
+
+var=np.array([1,2,3,4,5,])
+varadd=var/5
+print(varadd)
+
+var=np.array([1,2,3,4,5,])
+varadd= np.reciprocal(var)
+print(varadd)
+
+
+
+#2d array
+#np.add(a,b)
+
+var21  =np.array([[1,2,3,4,5],[1,2,3,4,5]])
+var22  =np.array([[1,2,3,4,5],[1,2,3,4,5]])
+print(var21)
+print()
+print(var22)
+print()
+varadd2=var21+var22
+print(varadd2)
+
+#np.multiply(a,b)
+
+var21  =np.array([[1,2,3,4,5],[1,2,3,4,5]])
+var22  =np.array([[1,2,3,4,5],[1,2,3,4,5]])
+print(var21)
+print()
+print(var22)
+print()
+varadd2=var21*var22
+print(varadd2)
 
 
