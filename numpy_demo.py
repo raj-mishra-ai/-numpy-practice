@@ -311,5 +311,30 @@ print()
 
 one=x1.reshape(-1)
 print(one)
-print(one.ndim)
+print(one.ndim) 
 
+ 
+#Lecture10 
+#Broadcasting Numpy Arrays
+
+# two rull of broadcasting 
+#1.same dimensior
+#2.diferent values
+
+import numpy as np
+
+var1 = np.array([1,2,3])
+
+print(var1.shape)
+print()
+print(var1)
+print()
+
+var2 = np.array([[1],[2],[3]])
+
+print(var1 + var2)
+print()
+
+print(var2)
+
+print(var1+var2)
