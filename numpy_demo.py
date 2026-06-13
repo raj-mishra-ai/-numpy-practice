@@ -276,8 +276,40 @@ print(var1.shape)
 #Reshape
 var2=np.array([1,2,3,4,5,6])
 x=var2.reshape(3,2)
+print(x) 
+
+var2=np.array([1,2,3,4,5,6,1,2,3])
+print(var2)
+
+print()
+x=var2.reshape(3,3)
 print(x)
+print(x.ndim)
+
+
+var3=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print(var3)
+print(x.ndim)
+
+print()
+x1=var3.reshape(2,3,2)
+print(x1)
+print(x1.ndim)
 
 
 
-                
+var3=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print(var3)
+print(x.ndim)
+
+print()
+x1=var3.reshape(2,3,2)
+print(x1)
+print(x1.ndim)
+
+print()
+
+one=x1.reshape(-1)
+print(one)
+print(one.ndim)
+
