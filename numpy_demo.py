@@ -497,6 +497,135 @@ ar=np.array_split(var,2,axis=1) #split along axis.
 print("splite 2D array along axis: ",ar)
 print()
 
+# Lecture 15
+# Numpy arrays function.
+# 1. Search(search an array for a certain value, and return the indexes that get a match)
+import numpy as np
+var=np.array([3,5,7,8,7,9])
+print("array: ",var)
+x=np.where(var==7) # here it will find 7 and return it's index value.
+print("search 7: ",x)
+print()
+# 2. Search sorted array(it performs a binary search in the array, and returns the index where the specified value would be inserted to maintain the search order.)
+var1=np.array([2,4,6,7,8,9])
+print("array: ",var1)
+x1=np.searchsorted(var1,3) # it will return the index value of where 3 will insert so that it would be in sorted order.
+x2=np.searchsorted(var1,[1,3,5],side="right")
+print("give index value of [3]: ",x1)
+print("give index value of [1,3,5]: ",x2)
+print()
+# 3. sort(Ordered sequence is any sequence that has an order corresponding to elements, like numeric or alphabetical,ascending or descending.)
+var2=np.array([2,4,1,6,7,8,5,13,9])
+print("array: ",var2)
+print("sorted array: ", np.sort(var2))
+
+var3=np.array(["f","j","a","t","c","e"])
+print("array: ",var3)
+print("sorted array: ", np.sort(var3))
+print()
+
+var2=np.array([[2,4,1,6],[7,8,5,13]])
+print("2D array: ",var2)
+print("sorted 2D array: ", np.sort(var2))
+print()
+# 4. Filter array(Getting some elements out of an existing array and creating a new array out of then)
+var4=np.array(["f","t","a","r","c","y"])
+print("array: ",var4)
+f=[True,False,True,True,False,False]
+new_var4=var4[f]
+print("Filtered array: ",new_var4)
+print(type(new_var4))
+print()
+
+# Lecture 16
+# Numpy array functions(shuffle,unique,resize,flatten,ravel)
+# 1. Shuffle
+import numpy as np
+var=np.array([3,4,5,6,7])
+print("array: ",var)
+np.random.shuffle(var)
+print("shuffled array: ",var)
+# 2. Unique
+var=np.array([3,4,3,5,4,6,5,1,1,7])
+print("array: ",var)
+x=np.unique(var) #it will return unique values.
+print("unique element of array: ",x)
+print()
+x1=np.unique(var,return_index=True)
+print("index of unique element: ",x1)
+print()
+x2=np.unique(var,return_counts=True)
+print("count repitition of unique element: ",x2)
+print()
+# 3.Resize
+var1=np.array([3,4,3,5,4,6,5,1,1])
+print("array: ",)
+x=np.resize(var1,(3,3))
+print("Resized array: ",x)
+print()
+# 4. Flatten(convert nD array into 1D array)
+var1=np.array([[3,4,3],[5,4,6],[5,1,1]])
+print("array: ",var1)
+print("flattened array: ",var1.flatten()) # it will convert nD array into 1D array.
+print("flattened array in C-style(row): ",var1.flatten(order="C")) # "C" means to flatten in row major(C-style) order.
+print("flattened array in fortan style(column) : ",var1.flatten(order="F")) #"F" means to flatten in coumn major(fortan style) order 
+print()
+# 5. Ravel(converts nD array into 1D array)
+var2=np.array([[3,4,3],[5,4,6],[5,1,1]])
+print("array: ",var2)
+print("Ravel: ",np.ravel(var2))
+print("Ravel order 'A': ",np.ravel(var2,order="A"))
+print("Ravel order 'F': ",np.ravel(var2,order="F"))
+print("Ravel order 'K': ",np.ravel(var2,order="K"))
+print("Ravel order 'C': ",np.ravel(var2,order="C"))
+print()
+
+# Lecture 17
+# Numpy insert and delete arrays function.
+# 1. for 1D array. 
+import numpy as np
+var=np.array([4,5,8,2,5])
+print("1D array: ",var)
+v1=np.insert(var,3,50) # insert(arrayname,position,value)
+v2=np.insert(var,(3,4),50)
+v3=np.insert(var,(3,4),8.9) #it will not accept float value.
+print("insert 50 in the array: ",v1)
+print("insert 50 in the array: ",v2)
+print("insert 8.9 in the array: ",v3)
+print("it will not accept float value")
+print()
+# for 2D array. 
+var_2=np.array([[3,4,5],[7,3,8]])
+v4=np.insert(var_2,2,10,axis=0) # insert(arrayname,position,value,axis)
+v5=np.insert(var_2,2,10,axis=1) 
+v6=np.insert(var_2,2,[10,6],axis=1)# insert multiple values.
+v7=np.insert(var_2,2,[10,5,8],axis=0) 
+print("2D array:",var_2)
+print("insert value in 2D array along axis=0:",v4)
+print("insert value in 2D array along axis=1:",v5)
+print("insert multiple value in 2D array along axis=1:",v6)
+print("insert multiple value in 2D array along axis=1:",v7)
+print()
+# insert data through append function.
+# for 1D array.
+var=np.array([4,5,8,2,5])
+print("1D array: ",var)
+x=np.append(var,6.5)
+print("append value in 1D array: ",x)
+print()
+# for 2D array.
+var_2=np.array([[3,4,5],[7,3,8]])
+print("2D array:",var_2)
+x1=np.append(var_2,[[65,78,43]],axis=0)
+print("append multiple value in 1D array: ",x1)
+print()
+# Delete function.
+# for 1D array.
+var=np.array([4,5,8,2,5])
+print("1D array: ",var)
+d=np.delete(var,2)
+print("delete perticular value from array:",d)
+
 
 
 
